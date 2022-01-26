@@ -19,9 +19,6 @@ public class LMSspringClient {
 	Scanner scanner = new Scanner(System.in);
 	
 	ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-	Book book;
-	Member member;
-	Loan loan;
 	ManageBook manageBookBean = (ManageBook) context.getBean("manageBookBean");
 	ManageMember manageMemberBean = (ManageMember) context.getBean("manageMemberBean");
 	ManageLoan manageLoanBean = (ManageLoan) context.getBean("manageLoanBean");
